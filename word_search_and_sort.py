@@ -18,7 +18,8 @@ driver.get(URL)
 
 # enter the word in the search box
 e1 = driver.find_element_by_name('txt_word')
-e1.send_keys('Pythonプログラミング')
+search_word = 'Pythonプログラミング'
+e1.send_keys(search_word)
 
 # click the submit button
 btn = driver.find_element_by_name('submit_btn_searchEasy')
